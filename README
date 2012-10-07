@@ -1,4 +1,6 @@
 # I shoud do this:
 
-ln -s my_repos/dotfiles-mac/.bash_profile .bash_profile
-ln -s my_repos/dotfiles-mac/.bashrc .bashrc
+git clone https://github.com/mitsuakikawamorita/dotfiles-mac.git
+cd dotfiles-mac
+ln -s ./.bash_profile ~/.bash_profile
+ln -s ./.bashrc ~/.bashrc
