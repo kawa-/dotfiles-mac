@@ -1,0 +1,4 @@
+# I shoud do this:
+
+ln -s my_repos/dotfiles-mac/.bash_profile .bash_profile
+ln -s my_repos/dotfiles-mac/.bashrc .bashrc
