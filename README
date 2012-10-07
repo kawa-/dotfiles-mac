@@ -2,5 +2,5 @@
 
 git clone https://github.com/mitsuakikawamorita/dotfiles-mac.git
 cd dotfiles-mac
-ln -s ./.bash_profile ~/.bash_profile
-ln -s ./.bashrc ~/.bashrc
+ln -s ~/my_repos/.bash_profile ~/.bash_profile
+ln -s ~/my_repos/.bashrc ~/.bashrc
