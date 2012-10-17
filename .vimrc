@@ -1,8 +1,3 @@
-imap ^[OA <Up>
-imap ^[OB <Down>
-imap ^[OC <Right>
-imap ^[OD <Left>
-
 set autoindent
 set nocompatible
 set incsearch
