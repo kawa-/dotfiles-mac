@@ -38,7 +38,7 @@ esac
 source ~/.git-completion.bash
 source ~/.git-prompt.sh
 
-PS1="\[\033[${col}m[\u@\h: \w]$(__git_ps1)\n\$ \[\033[0m\]"
+export PS1="\[\033[${col}m[\u@\h: \w]\n$ \[\033[0m\]"
 #export PS1='\[\e[0;32m\] [\u@\h: \W] \[\e[m\]\n\$ '
 
 # PS1='[\u@\H: \w]\n\$ '

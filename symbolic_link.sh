@@ -12,4 +12,6 @@ ln -s ~/my_repos/dotfiles-mac/.vimrc ~/.vimrc
 ln -s ~/my_repos/dotfiles-mac/.git-completion.bash ~/.git-completion.bash
 ln -s ~/my_repos/dotfiles-mac/.git-prompt.sh ~/.git-prompt.sh
 
-source ~/.bash_profile ~/.bashrc ~/.vimrc
+source ~/.bash_profile
+source ~/.bashrc
+source ~/.vimrc
