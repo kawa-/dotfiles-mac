@@ -26,18 +26,24 @@ giko*)  col=33;;  # 黄
 *) col=1;; # それ以外のホストでは強調表示
 esac
 
-
 #export PS1="\n[\u@\h:\w]\\n\$"
-#export PS1="\n[$USER@\h: $PWD]\n\$"
-#export PS1='\[\033[01;32m\]\u@\H\[\033[01;34m\] \w \$\[\033[00m\]'
-#export PS1='\n[$USER@\h: $PWD]\n\$'
-#export PS1='\n[$USER@\h: $PWD]\n\$'
 
 #col=35 # yellow
 #PS1="\[\033[${col}m[\u@\h \W]$ \[\033[0m\]"
 
-PS1="\[\033[${col}m[\u@\h: \w]\n\$ \[\033[0m\]"
+#if [ -f ~/.git-completion.bash ]; then
+#	. ~/.git-completion.bash
+#fi
+
+source ~/.git-completion.bash
+source ~/.git-prompt.sh
+
+PS1="\[\033[${col}m[\u@\h: \w]$(__git_ps1)\n\$ \[\033[0m\]"
 #export PS1='\[\e[0;32m\] [\u@\h: \W] \[\e[m\]\n\$ '
+
+# PS1='[\u@\H: \w]\n\$ '
+# ↑一番シンプルなのがこれ。色はないけれど。
+# $(__git_ps1) ←これでgitのブランチも表示できるそうな。git-complete.bashが導入されている環境では。
 
 #\[\e[0;31m\]で色が変更され、\[\e[m\]で色が戻る。
 #Black 	0;30
@@ -62,8 +68,4 @@ alias mi='open -a mi'
 alias grep='grep --color'
 alias vi='vim'
 alias rm='rmtrash'
-
-if [ -f ~/.git-completion.bash ]; then
-	. ~/.git-completion.bash
-fi
 
