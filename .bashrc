@@ -62,3 +62,8 @@ alias mi='open -a mi'
 alias grep='grep --color'
 alias vi='vim'
 alias rm='rmtrash'
+
+if [ -f ~/.git-completion.bash ]; then
+	. ~/.git-completion.bash
+fi
+
