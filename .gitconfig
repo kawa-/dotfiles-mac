@@ -11,7 +11,8 @@ grep = auto
 [push]
 default = tracking       # defaultのpush先はtrackingしているリポジトリ
 [core]
-autocrlf = input                 # CRLFを自動変換
+symlinks = false
+autocrlf = false                 # CRLFを自動変換しない
 editor = vim
 quotepath = false
 [merge]
