@@ -8,7 +8,7 @@ export HISTCONTROL=ignoreboth
 #よく使うコマンドは保存しない
 export HISTIGNORE="fg*:bg*:history*"
 
-export HISTSIZE=10000
+export HISTSIZE=100000
 
 #case "$HOSTNAME" in
 #kawa*) col=31;;  # 赤
