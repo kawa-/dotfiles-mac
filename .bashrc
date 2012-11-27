@@ -69,3 +69,5 @@ alias grep='grep --color'
 alias vi='vim'
 alias rm='rmtrash'
 
+# パス
+PATH="$PATH":~/my_repos/composer_php_mac/vendor/bin
