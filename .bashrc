@@ -6,7 +6,7 @@ export LC_MESSAGES='ja_JP.UTF-8'
 export HISTCONTROL=ignoreboth
 
 #よく使うコマンドは保存しない
-export HISTIGNORE="fg*:bg*:history*"
+#export HISTIGNORE="fg*:bg*:history*"
 
 export HISTSIZE=100000
 
