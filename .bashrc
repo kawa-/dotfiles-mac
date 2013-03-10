@@ -71,5 +71,5 @@ alias rm='rmtrash'
 alias php='php54'
 
 # パス
-export PATH=$PATH:/Users/mk/my_repos/play-2.1.0
+export PATH=$PATH:/Users/mk/my_repos/play-2.0.4
 #PATH="$PATH":~/my_repos/composer_php_mac/vendor/bin
