@@ -69,6 +69,7 @@ alias grep='grep --color'
 alias vi='vim'
 alias rm='rmtrash'
 alias php='php54'
+alias wget='wget --no-check-certificate'
 
 # パス
 export PATH=$PATH:/Users/mk/my_repos/play-2.0.4
