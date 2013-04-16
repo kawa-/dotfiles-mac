@@ -74,3 +74,5 @@ alias wget='wget --no-check-certificate'
 # パス
 export PATH=$PATH:/Users/mk/my_repos/play-2.0.4
 #PATH="$PATH":~/my_repos/composer_php_mac/vendor/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
