@@ -70,6 +70,7 @@ alias vi='vim'
 alias rm='rmtrash'
 alias php='php54'
 alias wget='wget --no-check-certificate'
+alias curl = 'curl -s'
 
 # パス
 export PATH=$PATH:/Users/mk/my_repos/play-2.0.4
