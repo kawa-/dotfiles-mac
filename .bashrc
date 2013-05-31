@@ -73,7 +73,14 @@ alias wget='wget --no-check-certificate'
 alias curl='curl -s'
 
 # パス
-export PATH=$PATH:/Users/mk/my_repos/play-2.0.4
+
+# GOPATH
+export GOPATH=$HOME/.gocode
+
+#export PATH=$PATH:/Users/mk/my_repos/play-2.0.4
 #PATH="$PATH":~/my_repos/composer_php_mac/vendor/bin
+
+# java_home
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
