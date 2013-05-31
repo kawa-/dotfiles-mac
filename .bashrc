@@ -81,6 +81,6 @@ export GOPATH=$HOME/.gocode
 #PATH="$PATH":~/my_repos/composer_php_mac/vendor/bin
 
 # java_home
-export JAVA_HOME=$(/usr/libexec/java_home)
+export JAVA_HOME=$(/System/Library/Frameworks/JavaVM.framework/Home)
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
