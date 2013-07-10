@@ -2,6 +2,8 @@ export LANG=ja_JP.UTF-8
 export LC_ALL='ja_JP.UTF-8'
 export LC_MESSAGES='ja_JP.UTF-8'
 
+#export LANG=en_US.utf8
+
 #空白を履歴に追記しない、重複履歴を保存しない
 export HISTCONTROL=ignoreboth
 
@@ -71,6 +73,7 @@ alias rm='rmtrash'
 alias php='php54'
 alias wget='wget --no-check-certificate'
 alias curl='curl -s'
+alias ls='ls -G'
 
 # パス
 
