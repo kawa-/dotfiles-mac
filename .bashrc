@@ -95,4 +95,4 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 #    export PATH="$RBENV_ROOT/bin:$PATH"
 #    eval "$(rbenv init -)"
 #fi
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
