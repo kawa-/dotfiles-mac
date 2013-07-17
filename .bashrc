@@ -90,5 +90,8 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -d $HOME/.rbenv/bin ]; then
+    export RBENV_ROOT=$HOME/.rbenv
+    export PATH="$RBENV_ROOT/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
