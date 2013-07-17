@@ -1,3 +1,4 @@
+
 function rm() {
     if [ -d ~/.Trash ]; then
         local DATE=`date "+%y%m%d-%H%M%S"`
@@ -21,11 +22,15 @@ fi
 ##
 
 # MacPorts Installer addition on 2012-06-04_at_18:25:00: adding an appropriate PATH variable for use with MacPorts.
+
+# rbenv
+if [ -d $HOME/.rbenv/bin ]; then
+    export RBENV_ROOT=$HOME/.rbenv
+    export PATH="$RBENV_ROOT/bin:$PATH"
+    eval "$(rbenv init -)"
+fi
+
+
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
-
-# rvm
-#eval "$(rbenv init -)"
-
-#[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
