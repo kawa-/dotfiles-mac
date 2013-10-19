@@ -69,11 +69,14 @@ alias lsa='ls -all'
 alias mi='open -a mi'
 alias grep='grep --color'
 alias vi='vim'
-alias rm='rmtrash'
-alias php='php54'
+#alias php='php54'
 alias wget='wget --no-check-certificate'
 alias curl='curl -s'
 alias ls='ls -G'
+alias top='htop'
+alias ps='pstree | less'
+alias netstat='lsof -nP -iTCP'
+alias listen='lsof -nP -iTCP -sTCP:LISTEN'
 
 # パス
 
@@ -86,6 +89,12 @@ export GOPATH=$HOME/.gocode
 # java_home
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
+
+# homebrew php
+export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+
+# gnu sed
+#PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 
 #PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 

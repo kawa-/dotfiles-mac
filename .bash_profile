@@ -31,6 +31,17 @@ if [ -d $HOME/.rbenv/bin ]; then
 fi
 
 
+#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+#export PATH="$HOME/.phpenv/bin:$PATH"
+#eval "$(phpenv init -)"
+
+##
+# Your previous /Users/kawa/.bash_profile file was backed up as /Users/kawa/.bash_profile.macports-saved_2013-10-19_at_11:22:20
+##
+
+# MacPorts Installer addition on 2013-10-19_at_11:22:20: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
