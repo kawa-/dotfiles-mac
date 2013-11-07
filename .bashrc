@@ -80,6 +80,10 @@ alias listen='lsof -nP -iTCP -sTCP:LISTEN'
 
 # パス
 
+# HBASE
+export HBASE_HOME=$HOME/my_repos/softwares/hbase-0.94.12
+export PATH=$HBASE_HOME/bin:$PATH
+
 # GOPATH
 export GOPATH=$HOME/.gocode
 
@@ -91,7 +95,7 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6.0/Home
 
 # homebrew php
-export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
+#export PATH="$(brew --prefix josegonzalez/php/php54)/bin:$PATH"
 
 # gnu sed
 #PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
