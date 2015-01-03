@@ -29,6 +29,7 @@ alias top='htop'
 alias ps='pstree | less'
 alias netstat='lsof -nP -iTCP'
 alias listen='lsof -nP -iTCP -sTCP:LISTEN'
+alias nt='~/my_repos/script/nt.applescript'
 
 # GOPATH
 export GOPATH=$HOME/.gocode
