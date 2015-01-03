@@ -17,12 +17,6 @@ if [ -f ~/.bashrc ] ; then
 . ~/.bashrc
 fi
 
-##
-# Your previous /Users/mk/.bash_profile file was backed up as /Users/mk/.bash_profile.macports-saved_2012-06-04_at_18:25:00
-##
-
-# MacPorts Installer addition on 2012-06-04_at_18:25:00: adding an appropriate PATH variable for use with MacPorts.
-
 # rbenv
 if [ -d $HOME/.rbenv/bin ]; then
     export RBENV_ROOT=$HOME/.rbenv
@@ -30,18 +24,9 @@ if [ -d $HOME/.rbenv/bin ]; then
     eval "$(rbenv init -)"
 fi
 
-
-#export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-#export PATH="$HOME/.phpenv/bin:$PATH"
-#eval "$(phpenv init -)"
-
-##
-# Your previous /Users/kawa/.bash_profile file was backed up as /Users/kawa/.bash_profile.macports-saved_2013-10-19_at_11:22:20
-##
-
-# MacPorts Installer addition on 2013-10-19_at_11:22:20: adding an appropriate PATH variable for use with MacPorts.
+# macports
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
 
+# nvm
+export NVM_DIR="/Users/mk/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
