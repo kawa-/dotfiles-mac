@@ -16,6 +16,13 @@ source ~/.git-completion.bash
 source ~/.git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=true
 
+case "$HOSTNAME" in
+kawabook*) col=36;; #水色
+yoshi*) col=32;;  # 緑
+grape*) col=32;;  # 緑
+giko*)  col=33;;  # 黄
+*) col=1;; # それ以外のホストでは強調表示
+esac
 export PS1="\[\033[${col}m[\u@\h: \w]\n$ \[\033[0m\]"
 
 alias lsa='ls -all'
@@ -29,7 +36,7 @@ alias top='htop'
 alias ps='pstree | less'
 alias netstat='lsof -nP -iTCP'
 alias listen='lsof -nP -iTCP -sTCP:LISTEN'
-alias nt='~/my_repos/script/nt.applescript'
+alias nt='~/my_repos/dotfiles-mac/script/nt.applescript'
 
 # GOPATH
 export GOPATH=$HOME/.gocode
