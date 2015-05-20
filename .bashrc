@@ -36,10 +36,22 @@ alias top='htop'
 alias ps='pstree | less'
 alias netstat='lsof -nP -iTCP'
 alias listen='lsof -nP -iTCP -sTCP:LISTEN'
+
+# open new tab in the current dir
 alias nt='~/my_repos/dotfiles-mac/script/nt.applescript'
+
+# git
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
 
 # GOPATH
 export GOPATH=$HOME/.gocode
 
 # java_home
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Home
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+#export JAVA_TOOL_OPTIONS='-Dfile.encoding=UTF-8'
+alias javac='javac -J-Dfile.encoding=UTF-8'
+
