@@ -45,7 +45,7 @@ alias gs='git status '
 alias ga='git add '
 alias gc='git commit -m '
 alias gp='git push '
-alias gdh='git diff HEAD '
+alias gd='git diff HEAD '
 
 # GOPATH
 export GOPATH=$HOME/.gocode
