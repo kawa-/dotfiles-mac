@@ -41,10 +41,11 @@ alias listen='lsof -nP -iTCP -sTCP:LISTEN'
 alias nt='~/my_repos/dotfiles-mac/script/nt.applescript'
 
 # git
-alias gs='git status'
-alias ga='git add'
-alias gc='git commit -m'
-alias gp='git push'
+alias gs='git status '
+alias ga='git add '
+alias gc='git commit -m '
+alias gp='git push '
+alias gdh='git diff HEAD '
 
 # GOPATH
 export GOPATH=$HOME/.gocode
